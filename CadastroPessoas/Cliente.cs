@@ -19,5 +19,12 @@ namespace CadastroPessoas
         {
             CodigoCliente = codigoCliente;
         }
+
+        public override void Apresentar()
+        {
+            Console.WriteLine("Cliente: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Código: " + CodigoCliente);
+        }
     }
 }

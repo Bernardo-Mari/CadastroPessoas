@@ -24,5 +24,11 @@ namespace CadastroPessoas
         {
             Salario = salario;
         }
+        public override void Apresentar()
+        {
+            Console.WriteLine("Funcionário: " + GetNome());
+            Console.WriteLine("Idade: " + Idade);
+            Console.WriteLine("Salário: " + Salario);
+        }
     }
 }

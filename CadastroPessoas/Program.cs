@@ -31,8 +31,6 @@ namespace CadastroPessoas
             Console.WriteLine("=== FUNCIONÁRIO");
             funcionario.ExibirDadosFuncionario();
 
-
-
             Console.WriteLine();
             Console.WriteLine("=== GERENTE ===");
             gerente.ExibirDadosGerente();
@@ -46,6 +44,14 @@ namespace CadastroPessoas
 
             cliente.Apresentar();
             cliente.Apresentar(true);
+
+            Pessoa pessoaCliente = cliente;
+            Pessoa pessoaFuncionario = funcionario;
+            Pessoa pessoaGerente = gerente;
+
+            pessoaCliente.Apresentar();
+            pessoaFuncionario.Apresentar();
+            pessoaGerente.Apresentar();
 
             Console.ReadKey();
         }
