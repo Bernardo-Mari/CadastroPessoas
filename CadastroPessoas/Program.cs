@@ -40,6 +40,9 @@ namespace CadastroPessoas
             cliente.SetNome("Ana Souza");
             cliente.SetIdade(28);
 
+            cliente.CodigoCliente = "CLI-001";
+            Console.WriteLine(cliente.CodigoCliente);
+
 
             Console.ReadKey();
         }

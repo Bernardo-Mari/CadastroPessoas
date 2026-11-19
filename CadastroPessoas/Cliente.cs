@@ -8,7 +8,7 @@ namespace CadastroPessoas
 {
     public class Cliente : Pessoa
     {
-        public string CodigoCliente;
+        public string CodigoCliente { get; set; }
 
         public void ExibirDadosClientes() 
         {
