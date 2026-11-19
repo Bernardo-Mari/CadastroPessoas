@@ -26,5 +26,11 @@ namespace CadastroPessoas
             Console.WriteLine("Idade: " + Idade);
             Console.WriteLine("Código: " + CodigoCliente);
         }
+
+        public Cliente(string nome, int idade)
+        :base(nome, idade)
+        {
+            CodigoCliente = "SEM-CODIGO";
+        }
     }
 }
